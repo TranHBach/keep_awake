@@ -1,0 +1,1 @@
+LMAO, Just run `go run keep_awake.go`
