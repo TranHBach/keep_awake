@@ -43,11 +43,11 @@ func moveMouse() {
 
 	// Move mouse slightly away from current position
 	C.moveMouseTo(currentX+C.int(offsetX), currentY+C.int(offsetY))
-	time.Sleep(100 * time.Millisecond) // 0.1 second duration
+	time.Sleep(10 * time.Millisecond) // 0.01 second duration
 
 	// Return to original position
 	C.moveMouseTo(currentX, currentY)
-	time.Sleep(100 * time.Millisecond) // 0.1 second duration
+	time.Sleep(10 * time.Millisecond) // 0.01 second duration
 
 	fmt.Printf("Mouse moved at %s\n", time.Now().Format("15:04:05"))
 }
